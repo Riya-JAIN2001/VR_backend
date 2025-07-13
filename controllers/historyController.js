@@ -16,7 +16,7 @@ const saveHistory = async (req, res) => {
 
     await History.insertMany(historyDocs);
 
-    res.json({ message: '✅ History saved!' });
+    res.json({ message: 'History saved!', data: coins});
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
