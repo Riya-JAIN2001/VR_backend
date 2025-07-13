@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://vr-automation-frontend.vercel.app",
+    origin: "https://vr-automation-frontend-riya.vercel.app/",
     credentials: true,
   })
 );
