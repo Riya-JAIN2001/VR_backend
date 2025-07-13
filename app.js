@@ -7,8 +7,9 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://vr-automation-frontend-h6q5.vercel.app"
-  })
+  origin: '*', // allows all origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
+};)
 );
 app.use(express.json());
 
