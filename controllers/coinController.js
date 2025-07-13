@@ -14,7 +14,7 @@ const getCoins = async (req, res) => {
         },
         headers: {
           accept: "application/json",
-          "x-cg-demo-api-key": COINGECKO_API_KEY,
+          "x-cg-demo-api-key": process.env.COINGECKO_API_KEY,
         },
       }
     );
